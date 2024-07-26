@@ -11,17 +11,17 @@ The goal of this project is to explore and implement security best practices in 
 ### Week 1: Infrastructure as Code (IaC) Security with TypeScript and AWS CDK
 
 #### Day 1-2: AWS CDK and TypeScript Fundamentals
-- [ ] Set up development environment
-    - [ ] Install Node.js and npm
-    - [ ] Install AWS CDK CLI
-    - [ ] Configure AWS CLI with your credentials
-- [ ] Study AWS CDK basics
-    - [ ] Complete the AWS CDK Workshop for TypeScript
-    - [ ] Understand CDK constructs, stacks, and apps
-- [ ] Create a basic CDK project
-    - [ ] Initialize a new CDK project with TypeScript
-    - [ ] Implement a simple stack (e.g., S3 bucket and EC2 instance)
-    - [ ] Deploy the stack to your AWS account
+- ✅ Set up development environment
+    - ✅ Install Node.js and npm
+    - ✅ Install AWS CDK CLI
+    - ✅ Configure AWS CLI with your credentials
+- ✅ Study AWS CDK basics
+    - ✅ Complete the AWS CDK Workshop for TypeScript
+    - ✅ Understand CDK constructs, stacks, and apps
+- ✅ Create a basic CDK project
+    - ✅ Initialize a new CDK project with TypeScript
+    - ✅ Implement a simple stack (e.g., S3 bucket and EC2 instance)
+    - ✅ Deploy the stack to your AWS account
 
 #### Day 3-4: Introduction to IaC Security and Checkov
 - [ ] Study IaC security concepts
@@ -60,11 +60,9 @@ The goal of this project is to explore and implement security best practices in 
     - [ ] Implement automated deployment with security checks
 
 #### Key Learnings Week 1
-- Understanding of AWS CDK and its TypeScript implementation
-- Knowledge of IaC security concepts and their importance
-- Practical experience with Checkov for IaC security scanning
-- Implementation of security best practices in CDK code
-- Basic CI/CD setup with integrated security checks
+- `cdk init` cannot be run in a non-empty directory. Since I had already created the README.md and .gitignore, I had to
+create a new sub-folder, do a `cdk init` and then copy the files manually. Not ideal, but a one time thing.
+- 
 
 #### Resources Week 1
 - [AWS CDK TypeScript Workshop](https://cdkworkshop.com/20-typescript.html)
@@ -382,19 +380,29 @@ The goal of this project is to explore and implement security best practices in 
 ```markdown
 .
 ├── src/
+│   ├── apps/
+│   │   └── InfrastructureStackApp.ts
+│   ├── constructs/
+│   │   ├── storage/
+│   │   │   └── SecureS3Bucket.ts
+│   │   ├── compute/
+│   │   │   └── SecureEC2Instance.ts
+│   │   └── network/
+│   │       └── SecureVPC.ts
 │   ├── stacks/
-│   │   └── MyStack.ts
-│   └── constructs/
-│       └── SecureS3Bucket.ts
+│   │   ├── StorageStack.ts
+│   │   ├── ComputeStack.ts
+│   │   └── NetworkStack.ts
+│   └── utils/
+│       └── SecurityHelper.ts
 ├── test/
-│   └── MyStack.test.ts
-├── docs/
-│   └── learning-notes.md
+│   └── StorageStack.test.ts
 ├── .github/
 │   └── workflows/
 │       └── ci.yml
 ├── cdk.json
 ├── tsconfig.json
+├── jest.config.js
 ├── package.json
 └── README.md
 ```
