@@ -24,9 +24,9 @@ The goal of this project is to explore and implement security best practices in 
     - ✅ Deploy the stack to your AWS account
 
 #### Day 3-4: Introduction to IaC Security and Checkov
-- [ ] Study IaC security concepts
-    - [ ] Read about common IaC security misconfigurations
-    - [ ] Understand the importance of IaC security scanning
+- ✅ Study IaC security concepts
+    - ✅ Read about common IaC security misconfigurations
+    - ✅ Understand the importance of IaC security scanning
 - [ ] Set up Checkov
     - [ ] Install Checkov
     - [ ] Run Checkov on your basic CDK project
@@ -62,6 +62,8 @@ The goal of this project is to explore and implement security best practices in 
 #### Key Learnings Week 1
 - `cdk init` cannot be run in a non-empty directory. Since I had already created the README.md and .gitignore, I had to
 create a new sub-folder, do a `cdk init` and then copy the files manually. Not ideal, but a one time thing.
+- Do not use the root account for day to day activities. Amazon recommends you create an AWS account with an email address,
+and put the email and password in safe somewhere and forget it. Create a new user, and everything should be done by this user.
 - 
 
 #### Resources Week 1

@@ -1,6 +1,7 @@
 import * as cdk from 'aws-cdk-lib';
 import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import { Construct } from 'constructs';
+import {SecureEC2Instance} from "../constructs/compute/SecureEC2Instance";
 
 interface ComputeStackProps extends cdk.StackProps {
     vpc: ec2.IVpc;
@@ -9,11 +10,6 @@ interface ComputeStackProps extends cdk.StackProps {
 export class ComputeStack extends cdk.Stack {
     constructor(scope: Construct, id: string, props: ComputeStackProps) {
         super(scope, id, props);
-
-        new ec2.Instance(this, 'MyInstance', {
-            vpc: props.vpc,
-            instanceType: ec2.InstanceType.of(ec2.InstanceClass.T3, ec2.InstanceSize.MICRO),
-            machineImage: new ec2.AmazonLinuxImage(),
-        });
+        new SecureEC2Instance(this, 'SecureEC2Instance', props.vpc);
     }
 }
