@@ -9,7 +9,6 @@ export class SecureS3Bucket extends Construct {
         super(scope, id);
 
         this.bucket = new s3.Bucket(this, 'SecureBucket', {
-            encryption: s3.BucketEncryption.S3_MANAGED,
             versioned: true,
             publicReadAccess: false,
             blockPublicAccess: s3.BlockPublicAccess.BLOCK_ALL,
