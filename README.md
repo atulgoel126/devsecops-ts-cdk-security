@@ -27,13 +27,13 @@ The goal of this project is to explore and implement security best practices in 
 - ✅ Study IaC security concepts
     - ✅ Read about common IaC security misconfigurations
     - ✅ Understand the importance of IaC security scanning
-- [ ] Set up Checkov
-    - [ ] Install Checkov
-    - [ ] Run Checkov on your basic CDK project
-    - [ ] Analyze and understand Checkov output
-- [ ] Address security issues
-    - [ ] Fix identified security misconfigurations in your CDK code
-    - [ ] Re-run Checkov to verify fixes
+- ✅ Set up Checkov
+    - ✅ Install Checkov
+    - ✅ Run Checkov on your basic CDK project
+    - ✅ Analyze and understand Checkov output
+- ✅ Address security issues
+    - ✅ Fix identified security misconfigurations in your CDK code
+    - ✅ Re-run Checkov to verify fixes
 
 #### Day 5-6: Implement Security Best Practices in AWS CDK
 - [ ] Study AWS CDK security best practices
@@ -64,6 +64,7 @@ The goal of this project is to explore and implement security best practices in 
 create a new sub-folder, do a `cdk init` and then copy the files manually. Not ideal, but a one time thing.
 - Do not use the root account for day to day activities. Amazon recommends you create an AWS account with an email address,
 and put the email and password in safe somewhere and forget it. Create a new user, and everything should be done by this user.
+- Don't take checkov as the source of truth. Read each error and decide yourself if it's a major concern for your use case.
 - 
 
 #### Resources Week 1
