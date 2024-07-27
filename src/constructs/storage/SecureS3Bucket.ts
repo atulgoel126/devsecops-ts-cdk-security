@@ -28,10 +28,6 @@ export class SecureS3Bucket extends Construct {
         cfnBucket.cfnOptions.metadata = {
             'checkov': {
                 'skip': [
-                    // {
-                    //     'id': 'CKV_AWS_21',
-                    //     'comment': 'Ensure the S3 bucket has access logging enabled'
-                    // },
                     {
                         'id': 'CKV_AWS_18',
                         'comment': 'Ensure the S3 bucket has access logging enabled'
