@@ -54,10 +54,10 @@ The goal of this project is to explore and implement security best practices in 
 - ✅ Improve the example's security
     - ✅ Run Checkov and address findings
     - ✅ Implement additional security measures
-- [ ] Set up a CI/CD pipeline
-    - [ ] Configure GitHub Actions or GitLab CI
-    - [ ] Integrate Checkov into the CI/CD process
-    - [ ] Implement automated deployment with security checks
+- ✅ Set up a CI/CD pipeline
+    - ✅ Configure GitHub Actions or GitLab CI
+    - ✅ Integrate Checkov into the CI/CD process
+    - ✅ Implement automated deployment with security checks
 
 #### Key Learnings Week 1
 - `cdk init` cannot be run in a non-empty directory. Since I had already created the README.md and .gitignore, I had to
@@ -67,7 +67,7 @@ and put the email and password in safe somewhere and forget it. Create a new use
 - Don't take checkov as the source of truth. Read each error and decide yourself if it's a major concern for your use case.
 - Fixed Checkov error for an external repo: https://github.com/tchangkiat/aws-cdk-stacks/pull/7
 - Coordinated for Checkov errors - https://github.com/david-blg/api-crud-serverless-cdk/pull/19
-- 
+- Github has separate Env Secrets and Vars. These are also completely environment specific.
 
 #### Resources Week 1
 - [AWS CDK TypeScript Workshop](https://cdkworkshop.com/20-typescript.html)
