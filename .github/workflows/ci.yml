@@ -33,6 +33,9 @@ jobs:
 
       - name: CDK Synth
         run: npm run cdk-synth
+        env:
+          CDK_DEFAULT_ACCOUNT: ${{ secrets.AWS_ACCOUNT_ID }}
+          CDK_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
 
   checkov:
     runs-on: ubuntu-latest
