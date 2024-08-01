@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - main-week1-end
   pull_request:
     branches:
       - main
@@ -30,6 +29,9 @@ jobs:
 
       - name: Run tests
         run: npm test
+
+      - name: CDK Synth
+        run: npm run cdk-synth
 
   checkov:
     runs-on: ubuntu-latest
