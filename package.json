@@ -1,14 +1,12 @@
 {
-  "name": "cdk-workshop",
+  "name": "devsecops-ts-cdk-security",
   "version": "0.1.0",
-  "bin": {
-    "cdk-workshop": "bin/cdk-workshop.js"
-  },
   "scripts": {
-    "build": "cdk-workshop/node_modules/.bin/tsc",
-    "watch": "cdk-workshop/node_modules/.bin/tsc -w",
-    "test": "cdk-workshop/node_modules/.bin/jest",
-    "cdk": "cdk-workshop/node_modules/.bin/cdk"
+    "build": "tsc",
+    "test": "jest",
+    "cdk-deploy": "cdk deploy",
+    "cdk-diff": "cdk diff",
+    "cdk-synth": "cdk synth"
   },
   "devDependencies": {
     "@types/jest": "^29.5.11",

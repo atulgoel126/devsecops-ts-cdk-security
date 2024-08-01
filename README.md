@@ -36,24 +36,24 @@ The goal of this project is to explore and implement security best practices in 
     - ✅ Re-run Checkov to verify fixes
 
 #### Day 5-6: Implement Security Best Practices in AWS CDK
-- [ ] Study AWS CDK security best practices
-    - [ ] Read AWS CDK Best Practices documentation
-    - [ ] Understand principle of least privilege in IaC
+- ✅ Study AWS CDK security best practices
+    - ✅ Read AWS CDK Best Practices documentation
+    - ✅ Understand principle of least privilege in IaC
 - [ ] Implement secure patterns
     - [ ] Use CDK's high-level constructs for built-in security features
-    - [ ] Implement IAM roles with least privilege
+    - ✅ Implement IAM roles with least privilege
     - [ ] Enable encryption for data at rest and in transit
 - [ ] Explore CDK Aspects
     - [ ] Understand how CDK Aspects work
     - [ ] Implement a custom Aspect for security checks
 
 #### Day 7: Mini-project and CI/CD Integration
-- [ ] Choose an existing AWS CDK TypeScript example
-    - [ ] Fork the repository
-    - [ ] Analyze the existing security posture
-- [ ] Improve the example's security
-    - [ ] Run Checkov and address findings
-    - [ ] Implement additional security measures
+- ✅ Choose an existing AWS CDK TypeScript example
+    - ✅ Fork the repository
+    - ✅ Analyze the existing security posture
+- ✅ Improve the example's security
+    - ✅ Run Checkov and address findings
+    - ✅ Implement additional security measures
 - [ ] Set up a CI/CD pipeline
     - [ ] Configure GitHub Actions or GitLab CI
     - [ ] Integrate Checkov into the CI/CD process
@@ -65,6 +65,8 @@ create a new sub-folder, do a `cdk init` and then copy the files manually. Not i
 - Do not use the root account for day to day activities. Amazon recommends you create an AWS account with an email address,
 and put the email and password in safe somewhere and forget it. Create a new user, and everything should be done by this user.
 - Don't take checkov as the source of truth. Read each error and decide yourself if it's a major concern for your use case.
+- Fixed Checkov error for an external repo: https://github.com/tchangkiat/aws-cdk-stacks/pull/7
+- Coordinated for Checkov errors - https://github.com/david-blg/api-crud-serverless-cdk/pull/19
 - 
 
 #### Resources Week 1
