@@ -39,6 +39,7 @@ jobs:
           echo "aws_secret_access_key = ${{ secrets.AWS_SECRET_ACCESS_KEY }}" >> ~/.aws/credentials
           echo "[default]" > ~/.aws/config
           echo "region = ${{ secrets.AWS_REGION }}" >> ~/.aws/config
+          less ~/.aws/config
           aws s3 ls
 
       - name: CDK Synth
