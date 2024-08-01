@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - main-week1-end
   pull_request:
     branches:
       - main
