@@ -79,19 +79,19 @@ and put the email and password in safe somewhere and forget it. Create a new use
 ### Week 2: Container Security and CI/CD Pipeline Integration
 
 #### Day 1-2: Docker Fundamentals and Security
-- [ ] Set up Docker environment
-    - [ ] Install Docker Desktop
-    - [ ] Understand Docker architecture
-- [ ] Study Docker security concepts
-    - [ ] Read Docker security documentation
-    - [ ] Understand container isolation and resource constraints
-- [ ] Create a secure Dockerfile
-    - [ ] Use official base images
-    - [ ] Implement multi-stage builds
-    - [ ] Run containers as non-root user
-- [ ] Implement Docker best practices
-    - [ ] Use .dockerignore files
-    - [ ] Minimize the number of layers
+- ✅ Set up Docker environment
+    - ✅ Install Docker Desktop
+    - ✅ Understand Docker architecture
+- ✅ Study Docker security concepts
+    - ✅ Read Docker security documentation
+    - ✅ Understand container isolation and resource constraints
+- ✅ Create a secure Dockerfile
+    - ✅ Use official base images
+    - ✅ Implement multi-stage builds
+    - ✅ Run containers as non-root user
+- ✅ Implement Docker best practices
+    - ✅ Use .dockerignore files
+    - ✅ Minimize the number of layers
     - [ ] Implement health checks
 
 #### Day 3-4: Container Vulnerability Scanning
@@ -141,6 +141,28 @@ and put the email and password in safe somewhere and forget it. Create a new use
 - Knowledge of container vulnerability scanning using Trivy
 - Implementation of a CI/CD pipeline for secure container deployments
 - Exposure to advanced container security features and monitoring strategies
+- In addition to Trivy, we can also try docker scout. It comes by default and *might* be useful: `docker scout quickview`
+- We can also try docker scout for recommendations - ` docker scout recommendations local://my-cdk-app:latest`
+- To build the dockerfile, run `docker build -t my-cdk-app:latest .`
+- To run the dockerfile -
+  ``` 
+  docker run -it --rm \
+  -v ~/.aws:/home/cdkuser/.aws \
+  -v $(pwd):/app \
+  my-cdk-app:latest
+  ```
+- To run any specific cdk command - 
+  ```
+  docker run -it --rm \
+  -v ~/.aws:/home/cdkuser/.aws \
+  -v $(pwd):/app \
+  my-cdk-app:latest cdk synth --all
+  ```
+- You can verify the number of layers and image size with:
+  ```
+  docker history my-cdk-app:latest
+  docker images my-cdk-app:latest
+  ```
 
 #### Resources Week 2
 - [Docker Security Documentation](https://docs.docker.com/engine/security/)
