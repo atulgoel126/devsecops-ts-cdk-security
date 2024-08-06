@@ -20,7 +20,7 @@ WORKDIR /app
 
 # Install global dependencies and clean up in one layer
 RUN npm install -g aws-cdk && \
-    apk add --no-cache bash && \
+    apk add --no-cache bash curl && \
     rm -rf /tmp/* /var/cache/apk/*
 
 # Copy built application from builder stage
@@ -37,6 +37,10 @@ RUN addgroup -S cdkuser && \
 
 # Switch to the non-root user
 USER cdkuser
+
+# Add HEALTHCHECK instruction
+HEALTHCHECK --interval=30s --timeout=3s \
+  CMD curl -f http://localhost:3000/ || exit 1
 
 # Set the entrypoint
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
