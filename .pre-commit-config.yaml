@@ -1,0 +1,9 @@
+repos:
+  -   repo: local
+      hooks:
+        -   id: trivy-scan
+            name: Trivy vulnerability scanner
+            entry: ./trivy_scan.sh
+            language: script
+            args: ['my-cdk-app:latest']
+            pass_filenames: false
