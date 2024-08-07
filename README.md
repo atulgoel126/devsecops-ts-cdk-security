@@ -92,22 +92,22 @@ and put the email and password in safe somewhere and forget it. Create a new use
 - ✅ Implement Docker best practices
     - ✅ Use .dockerignore files
     - ✅ Minimize the number of layers
-    - [ ] Implement health checks
+    - ✅ Implement health checks
 
 #### Day 3-4: Container Vulnerability Scanning
-- [ ] Set up Trivy
-    - [ ] Install Trivy
-    - [ ] Understand Trivy's scanning capabilities
-- [ ] Scan Docker images
-    - [ ] Run Trivy against your custom images
-    - [ ] Scan base images and understand common vulnerabilities
-- [ ] Analyze and mitigate vulnerabilities
-    - [ ] Interpret Trivy scan results
-    - [ ] Update base images and dependencies
-    - [ ] Implement vulnerability patching strategies
-- [ ] Automate container scanning
-    - [ ] Create a script for automated Trivy scans
-    - [ ] Implement pre-commit hooks for local scans
+- ✅ Set up Trivy
+    - ✅ Install Trivy
+    - ✅ Understand Trivy's scanning capabilities
+- ✅ Scan Docker images
+    - ✅ Run Trivy against your custom images
+    - ✅ Scan base images and understand common vulnerabilities
+- ✅ Analyze and mitigate vulnerabilities
+    - ✅ Interpret Trivy scan results
+    - ✅ Update base images and dependencies
+    - ✅ Implement vulnerability patching strategies
+- ✅ Automate container scanning
+    - ✅ Create a script for automated Trivy scans
+    - ✅ Implement pre-commit hooks for local scans
 
 #### Day 5-6: CI/CD Pipeline for Container Deployments
 - [ ] Set up GitLab CI/CD for container projects
@@ -163,6 +163,8 @@ and put the email and password in safe somewhere and forget it. Create a new use
   docker history my-cdk-app:latest
   docker images my-cdk-app:latest
   ```
+
+- Use `./scan_docker_image.sh my-cdk-app:latest` to perform a quick scan for HIGH and CRITICAL vulnerabilities.
 
 #### Resources Week 2
 - [Docker Security Documentation](https://docs.docker.com/engine/security/)
