@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      - main-week3-day5-6
+      - main-week2-day5-6
   pull_request:
     branches:
       - main
