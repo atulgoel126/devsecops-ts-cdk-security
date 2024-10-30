@@ -110,18 +110,18 @@ and put the email and password in safe somewhere and forget it. Create a new use
     - ✅ Implement pre-commit hooks for local scans
 
 #### Day 5-6: CI/CD Pipeline for Container Deployments
-- [ ] Set up GitLab CI/CD for container projects
-    - [ ] Create .gitlab-ci.yml file
-    - [ ] Define stages: build, test, scan, and deploy
-- [ ] Implement Docker build in CI/CD
-    - [ ] Use Docker-in-Docker or host binding
-    - [ ] Optimize Docker build for CI/CD
-- [ ] Integrate security scans in CI/CD
-    - [ ] Add Trivy scan job in GitLab CI
-    - [ ] Implement policy to fail builds on critical vulnerabilities
-- [ ] Set up container registry
-    - [ ] Configure GitLab Container Registry
-    - [ ] Implement secure image pushing and pulling
+- ❌ Set up GitLab CI/CD for container projects
+    - ❌ Create .gitlab-ci.yml file
+    - ❌ Define stages: build, test, scan, and deploy
+- ✅ Implement Docker build in CI/CD
+    - ✅ Use Docker-in-Docker or host binding
+    - ✅ Optimize Docker build for CI/CD
+- ✅ Integrate security scans in CI/CD
+    - ✅ Add Trivy scan job in Github CI
+    - ✅ Implement policy to fail builds on critical vulnerabilities
+- ✅ Set up container registry
+    - ✅ Configure Github Container Registry
+    - ✅ Implement secure image pushing and pulling
 
 #### Day 7: Advanced Container Security and Monitoring
 - [ ] Implement Docker Content Trust (DCT)
