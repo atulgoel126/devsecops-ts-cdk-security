@@ -166,6 +166,10 @@ and put the email and password in safe somewhere and forget it. Create a new use
 
 - Use `./scan_docker_image.sh my-cdk-app:latest` to perform a quick scan for HIGH and CRITICAL vulnerabilities.
 
+- Use this image for running checkov - [bridgecrewio/checkov-action](https://github.com/bridgecrewio/checkov-action)
+
+- Use this image for running trivy - [aquasecurity/trivy-action](https://github.com/aquasecurity/trivy-action)
+
 #### Resources Week 2
 - [Docker Security Documentation](https://docs.docker.com/engine/security/)
 - [Trivy Documentation](https://aquasecurity.github.io/trivy/)
