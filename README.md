@@ -124,16 +124,10 @@ and put the email and password in safe somewhere and forget it. Create a new use
     - ✅ Implement secure image pushing and pulling
 
 #### Day 7: Advanced Container Security and Monitoring
-- [ ] Implement Docker Content Trust (DCT)
-    - [ ] Set up DCT for image signing
-    - [ ] Configure DCT in CI/CD pipeline
-- [ ] Explore runtime container security
-    - [ ] Study Docker security options and seccomp profiles
-    - [ ] Implement AppArmor or SELinux profiles
-- [ ] Set up container monitoring
-    - [ ] Implement logging strategies for containers
-    - [ ] Set up Prometheus for container metrics
-    - [ ] Create a basic Grafana dashboard for container health
+- ❌ Set up container monitoring
+    - ❌ Implement logging strategies for containers
+    - ❌ Set up Prometheus for container metrics
+    - ❌ Create a basic Grafana dashboard for container health
 
 #### Key Learnings Week 2
 - Understanding of Docker fundamentals and container security concepts
@@ -181,17 +175,17 @@ and put the email and password in safe somewhere and forget it. Create a new use
 ### Week 3: Cloud Security and Compliance
 
 #### Day 1-2: AWS Security Services Deep Dive
-- [ ] Study AWS GuardDuty
-    - [ ] Read AWS GuardDuty documentation
-    - [ ] Set up GuardDuty in your AWS account
-    - [ ] Analyze sample findings and understand their implications
-- [ ] Explore AWS Security Hub
-    - [ ] Enable Security Hub in your AWS account
-    - [ ] Review the AWS Foundational Security Best Practices standard
-    - [ ] Set up custom actions for specific finding types
-- [ ] Learn about AWS IAM Access Analyzer
-    - [ ] Enable IAM Access Analyzer
-    - [ ] Analyze its findings and understand resource exposure
+- ✅ Study AWS GuardDuty
+    - ✅ Read AWS GuardDuty documentation
+    - ✅ Set up GuardDuty in your AWS account
+    - ✅ Analyze sample findings and understand their implications
+- ✅ Explore AWS Security Hub
+    - ✅ Enable Security Hub in your AWS account
+    - ✅ Review the AWS Foundational Security Best Practices standard
+    - ✅ Set up custom actions for specific finding types
+- ✅ Learn about AWS IAM Access Analyzer
+    - ✅ Enable IAM Access Analyzer
+    - ✅ Analyze its findings and understand resource exposure
 
 #### Day 3-4: Implementing Least Privilege Access
 - [ ] Review current IAM policies in your AWS account
