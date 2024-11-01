@@ -188,14 +188,10 @@ and put the email and password in safe somewhere and forget it. Create a new use
     - ✅ Analyze its findings and understand resource exposure
 
 #### Day 3-4: Implementing Least Privilege Access
-- [ ] Review current IAM policies in your AWS account
-- [ ] Use IAM Access Analyzer to identify overly permissive policies
-- [ ] Create custom IAM policies following least privilege principle
-    - [ ] For EC2 instances
-    - [ ] For Lambda functions
-    - [ ] For ECS tasks
-- [ ] Implement AWS Organizations Service Control Policies (SCPs)
-- [ ] Set up AWS Config to monitor for policy changes
+-  ✅ Review current IAM policies in your AWS account
+-  ✅ Use IAM Access Analyzer to identify overly permissive policies
+-  ✅ Create custom IAM policies following least privilege principle
+    -  ✅ For EC2 instances
 
 #### Day 5-7: Compliance as Code
 - [ ] Study relevant compliance frameworks (e.g., HIPAA, PCI-DSS, GDPR)
