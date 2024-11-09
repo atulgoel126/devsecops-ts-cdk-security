@@ -55,8 +55,12 @@ jobs:
           exit-code: '1'
           ignore-unfixed: true
           severity: 'CRITICAL,HIGH'
+
       - name: Stelligent cfn_nag
         uses: stelligent/cfn_nag@v0.8.10
+        with:
+          input_path: cdk.out
+          template-pattern: .template.json
 
 
   docker:
