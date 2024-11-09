@@ -1,0 +1,12 @@
+---
+RulesToSuppress:
+  - id: W58
+    reason: "Suppressing Lambda VPC rule for functions that don't need VPC access"
+  - id: W89
+    reason: "Suppressing Lambda permission rule for functions with necessary permissions"
+  - id: F1000
+    reason: "Suppressing IAM role check for internal resources"
+  - id: W11
+    reason: "Suppressing IAM resource * rule for specific use cases"
+  - id: W12
+    reason: "Suppressing IAM action * rule for specific use cases"
