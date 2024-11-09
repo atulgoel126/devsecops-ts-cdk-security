@@ -60,7 +60,7 @@ jobs:
         uses: stelligent/cfn_nag@v0.8.10
         with:
           input_path: cdk.out
-          template-pattern: .template.json
+          extra_args: --template-pattern .template.json
 
 
   docker:
