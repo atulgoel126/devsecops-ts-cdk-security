@@ -216,6 +216,7 @@ and put the email and password in safe somewhere and forget it. Create a new use
 - [AWS IAM Access Analyzer Documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html)
 - [AWS Config Documentation](https://docs.aws.amazon.com/config/)
 - [AWS Organizations SCPs](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html)
+- [AWS HIPAA Whitepaper](https://docs.aws.amazon.com/pdfs/whitepapers/latest/architecting-hipaa-security-and-compliance-on-aws/architecting-hipaa-security-and-compliance-on-aws.pdf)
 
 ### Week 4: Application Security and Secure Development Practices
 
