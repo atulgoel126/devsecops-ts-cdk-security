@@ -194,15 +194,12 @@ and put the email and password in safe somewhere and forget it. Create a new use
     -  ✅ For EC2 instances
 
 #### Day 5-7: Compliance as Code
-- [ ] Study relevant compliance frameworks (e.g., HIPAA, PCI-DSS, GDPR)
-- [ ] Explore AWS Config Rules
-    - [ ] Set up custom Config Rules for your compliance needs
-    - [ ] Implement auto-remediation for non-compliant resources
-- [ ] Implement compliance checks in CI/CD pipeline
-    - [ ] Use cfn-nag for CloudFormation/CDK compliance scanning
-    - [ ] Integrate compliance checks into your GitLab CI pipeline
-- [ ] Create a custom CDK construct for compliant resource creation
-- [ ] Set up continuous compliance monitoring and reporting
+-  ✅ Study relevant compliance frameworks (e.g., HIPAA, PCI-DSS, GDPR)
+-  ✅ Implement compliance checks in CI/CD pipeline
+    -  ✅ Use cfn-nag for CloudFormation/CDK compliance scanning
+    -  ✅ Integrate compliance checks into your GitLab CI pipeline
+-  ✅ Create a custom CDK construct for compliant resource creation
+-  ✅ Set up continuous compliance monitoring and reporting
 
 #### Key Learnings Week 3
 - Understanding of AWS security services and their practical applications
@@ -216,6 +213,7 @@ and put the email and password in safe somewhere and forget it. Create a new use
 - [AWS IAM Access Analyzer Documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html)
 - [AWS Config Documentation](https://docs.aws.amazon.com/config/)
 - [AWS Organizations SCPs](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html)
+- [AWS HIPAA Whitepaper](https://docs.aws.amazon.com/pdfs/whitepapers/latest/architecting-hipaa-security-and-compliance-on-aws/architecting-hipaa-security-and-compliance-on-aws.pdf)
 
 ### Week 4: Application Security and Secure Development Practices
 

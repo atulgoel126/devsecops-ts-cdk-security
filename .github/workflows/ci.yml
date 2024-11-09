@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      - main-week2-day5-6
+      - main-week3-day5-7
   pull_request:
     branches:
       - main
@@ -38,7 +38,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       # Checkov scan
       - uses: bridgecrewio/checkov-action@v12
         with:
@@ -56,7 +55,14 @@ jobs:
           exit-code: '1'
           ignore-unfixed: true
           severity: 'CRITICAL,HIGH'
-#
+
+      - name: Stelligent cfn_nag
+        uses: stelligent/cfn_nag@v0.8.10
+        with:
+          input_path: cdk.out
+          extra_args: --template-pattern .template.json
+
+
   docker:
     needs: security-scan
     runs-on: ubuntu-latest
